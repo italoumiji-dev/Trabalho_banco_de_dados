@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho banco de dados</title>
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box2">
+            <div class="titulo">
+                <h3 class="dourado"> Modelagem de dados</h3>
+                <h1 class="branco"> Sistema banco de dados </h1>
+                <h1 class="dourado"> Livraria On-line</h1>
+            </div>
+        </div>
+        <div class="box">
+            
+            <div class="box1">
+                <h2> Entidades e Atributos </h2>
+                <div class="tabelas">
+                    <table border="1">
+                        <thead class="borda"> <!-- (thead) Tag usada para o cabeçalho de uma tabela, sendo possivel colocar css na mesma. -->
+                            <tr><!-- (tr) Tag usada para criar um linha, dentro de uma tag tr deve-se colocar uma tag (td) que ira criar as linhas. -->
+                                <td> Entidade </td>
+                                <td> Descrição </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Cliente </td>
+                                <td> Pessoa que realiza pedido pela internet. </td>
+                            </tr>
+                            <tr>
+                                <td> Pedido </td>
+                                <td> Solicitação de compra de um ou mais livros. </td>
+                            </tr>
+                            <tr>
+                                <td> Livro </td>
+                                <td> Produto disponível ou solicitado pelo cliente. </td>
+                            </tr>
+                            <tr>
+                                <td> Funcionário </td>
+                                <td> Analisa os pedidos e registra livros no estoque. </td>
+                            </tr>
+                            <tr>
+                                <td> Autor </td>
+                                <td> Responsável pelo desenvolvimento do livro. </td>
+                            </tr>
+                            <tr>
+                                <td> Nota fiscal </td>
+                                <td> Documento emitido para acompanhar o pedido. </td>
+                            </tr>
+                            <tr>
+                                <td> Estoque </td>
+                                <td> Controla os livros disponíveis na livraria. </td>
+                            </tr>
+                            <tr>
+                                <td> Editora </td>
+                                <td> Disponibiliza os livros á livraria. </td>
+                            </tr>
+                            <tr>
+                                <td> Compra </td>
+                                <td> Representa a compra de livros das editoras.</td>
+                            </tr>
+                            <tr>
+                                <td> Gerente </td>
+                                <td> Responsável por decidir sobre pedidos problemáticos. </td>
+                            </tr>
+                            <tr>
+                                <td> Setor de expedição</td>
+                                <td> Responsável pelo tratamento do pedido e expedição da nota fiscal. </td>
+                            </tr>
+                            <td> Envio </td>
+                            <td> Representa o envio dos livros ao cliente. </td>
+                        </tbody>
+                
+                        <!-- TABELA 2-->
+                    <table border="1">
+                        <thead class="borda"> <!-- (thead) Tag usada para o cabeçalho de uma tabela, sendo possivel colocar css na mesma. -->
+                            <tr><!-- (tr) Tag usada para criar um linha, dentro de uma tag tr deve-se colocar uma tag (td) que ira criar as linhas. -->
+                                <td> Entidade </td>
+                                <td> Id </td>
+                                <td> Principais atributos </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Cliente </td>
+                                <td> id_cliente </td>
+                                <td> Nome, telefone, e-mail, endereço</td>
+                            </tr>
+                            <tr>
+                                <td> Pedido </td>
+                                <td> id_pedido </td>
+                                <td> data, status, valor total</td>
+                            </tr>
+                            <tr>
+                                <td> Livro </td>
+                                <td> id_livro </td>
+                                <td> título, autor, preço, quantidade estoque</td>
+                            </tr>
+                            <tr>
+                                <td> Funcionário </td>
+                                <td> id_funcionario</td>
+                                <td> nome, cargo</td>
+                            </tr>
+                            <tr>
+                                <td> Autor </td>
+                                <td> id_autor</td>
+                                <td> ... </td>
+                            </tr>
+                            <tr>
+                                <td> Nota fiscal</td>
+                                <td> id_nota</td>
+                                <td> data de emissão, valor</td>
+                            </tr>
+                            <tr>
+                                <td> Estoque </td>
+                                <td> id_estoque </td>
+                                <td> quantidade de livros</td>
+                            </tr>
+                            <tr>
+                                <td> Editora </td>
+                                <td> id_editora </td>
+                                <td> nome, endereço, telefone</td>
+                            </tr>
+                            <tr>
+                                <td> Compra </td>
+                                <td> id_compra </td>
+                                <td> ... </td>
+                            </tr>
+                            <tr>
+                                <td> Gerente </td>
+                                <td> id_gerente </td>
+                                <td> nome </td>
+                            </tr>
+                            
+                            <tr>
+                                <td> Setor de expedição </td>
+                                <td> id_expedicao</td>
+                                <td> nome, localização</td>
+                            </tr>
+                            <tr>
+                                <td> envio </td>
+                                <td> id_envio </td>
+                                <td> data de envio, status, código de rastreamento</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
