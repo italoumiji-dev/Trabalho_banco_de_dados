@@ -5,10 +5,22 @@ body{
     margin: 0;
     background-color: #123e4b;
 }
-h2{
+p{
+    margin: 0%;
+}
+.h2_titulo{
     width: 100%;
     text-align: center;
     color: #123e4b;
+}
+.integrantes{
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    background-color:#2f505a;
+    border-radius: 30px;
+    margin-left: 100px;
+    
 }
 h3{
     margin: 0;
@@ -33,6 +45,11 @@ h3{
     text-align: center;
     background-color:#2f505a;
     border-radius: 30px;
+    margin-left: 400px;
+}
+.img{
+    width: 1000px;
+    height: 400px;
 }
 .box2{
     display: flex;
@@ -41,7 +58,7 @@ h3{
     
 }   
 .tabelas{
-        display: flex;
+    display: flex;
     justify-content: center;
     gap: 90px;
 
@@ -49,21 +66,37 @@ h3{
 .box{
     display: flex;
     justify-content: center;
+     flex-direction: column;
     
 }   
 .caixa_titulo{
     width: 13px;
     height: 30px;
 }
-.box1{
+.corpo_2{
+    margin-left: 400px;
+    width: 1000px;
+    gap: 100px; 
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+    text-align: center;
+    
+}
+.corpo1{
     display: flex;
     gap: 100px; 
     background-color: white;
     padding: 30px;
     border-radius: 20px;
     margin-top: 30px;
-    display: flex;
     flex-direction: column;
+    
+}
+td:hover{
+    background-color:#123e4b;
+    color: white;
     
 }
 .borda{
