@@ -37,6 +37,7 @@ h3{
     height: 1200px;
     margin: auto;
     margin-bottom: 100px;
+    
 
 }
 .titulo{
@@ -92,7 +93,8 @@ h3{
     border-radius: 20px;
     margin-top: 30px;
     flex-direction: column;
-    
+    width: 1500px;
+    margin-left: 180px;
 }
 td:hover{
     background-color:#123e4b;
