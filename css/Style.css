@@ -48,10 +48,6 @@ h3{
     border-radius: 30px;
     margin-left: 400px;
 }
-.img{
-    width: 1000px;
-    height: 400px;
-}
 .box2{
     display: flex;
     justify-content: center;
@@ -75,15 +71,9 @@ h3{
     height: 30px;
 }
 .corpo_2{
-    margin-left: 400px;
-    width: 1000px;
-    gap: 100px; 
-    background-color: white;
-    padding: 30px;
-    border-radius: 20px;
-    margin-top: 30px;
     text-align: center;
-    
+    display: flex;
+   justify-content:space-around
 }
 .corpo1{
     display: flex;
@@ -94,8 +84,34 @@ h3{
     margin-top: 30px;
     flex-direction: column;
     width: 1500px;
-    margin-left: 180px;
+    margin-left: 165px;
 }
+.img{
+    width: 551px;
+    height: 300px;
+}
+.fundo_div{
+    width: 551px;
+    background-color:white;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.rodape{
+    margin-top: 30px;
+    margin-left: 500px;
+    background-color: white;
+    text-align: center;
+    width: 1000px;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.link{
+    padding-top: 20px;
+}
+    
 td:hover{
     background-color:#123e4b;
     color: white;
