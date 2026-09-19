@@ -14,7 +14,7 @@ p{
     color: #123e4b;
 }
 .integrantes{
-    max-width: 300px;
+    max-width: 10%;
     width: 100%;
     text-align: center;
     background-color:#2f505a;
@@ -49,6 +49,8 @@ h3{
     margin-left: 400px;
 }
 .box2{
+    width: 1765px;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     
@@ -71,9 +73,12 @@ h3{
     height: 30px;
 }
 .corpo_2{
+    width:1900px ;
+    max-width: 100%;
     text-align: center;
     display: flex;
-   justify-content:space-around
+   justify-content:space-around;
+   
 }
 .corpo1{
     display: flex;
@@ -91,7 +96,6 @@ h3{
     height: 300px;
 }
 .fundo_div{
-    width: 551px;
     background-color:white;
     padding: 30px;
     border-radius: 20px;
@@ -99,7 +103,7 @@ h3{
 }
 .rodape{
     margin-top: 30px;
-    margin-left: 500px;
+    margin-left: 450px;
     background-color: white;
     text-align: center;
     width: 1000px;
