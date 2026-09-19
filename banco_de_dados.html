@@ -50,6 +50,11 @@
                                 <td> Produto disponível ou solicitado pelo cliente. </td>
                             </tr>
                             <tr>
+                                <td> Livraria </td>
+                                <td> Lugar onde acontece as vendas</td>
+            
+                            </tr>
+                            <tr>
                                 <td> Funcionário </td>
                                 <td> Analisa os pedidos e registra livros no estoque. </td>
                             </tr>
@@ -58,13 +63,14 @@
                                 <td> Responsável pelo desenvolvimento do livro. </td>
                             </tr>
                             <tr>
+                                <td> Autor_Livro</td>
+                                <td> Tabela associativa, criada para unir as entidades autor e livros </td>
+                            </tr>
+                            <tr>
                                 <td> Nota fiscal </td>
                                 <td> Documento emitido para acompanhar o pedido. </td>
                             </tr>
-                            <tr>
-                                <td> Estoque </td>
-                                <td> Controla os livros disponíveis na livraria. </td>
-                            </tr>
+                           
                             <tr>
                                 <td> Editora </td>
                                 <td> Disponibiliza os livros á livraria. </td>
@@ -78,15 +84,26 @@
                                 <td> Responsável por decidir sobre pedidos problemáticos. </td>
                             </tr>
                             <tr>
-                                <td> Pedido_Problematico</td>
+                                <td> Pedido Problemático</td>
                                 <td> Pedido com erro devido a falta de pagamento. </td>
                             </tr>
                             <tr>
                                 <td> Setor de expedição</td>
                                 <td> Responsável pelo tratamento do pedido e expedição da nota fiscal. </td>
                             </tr>
+                            <tr>
                             <td> Envio </td>
                             <td> Representa o envio dos livros ao cliente. </td>
+                            </tr>
+                            <tr>
+                                <td> Telefone</td>
+                                <td> Tabela criada para E-mails, por serem um atributo multivalorado</td>
+                            </tr>
+                            <tr>
+                                <td> E-mail</td>
+                                <td> Tabela criada para telefones, por serem um atributo multivalorado</td>
+                            </tr>
+                            
                         </tbody>
                 
                         <!-- TABELA 2-->
@@ -115,6 +132,11 @@
                                 <td> título, autor, preço, quantidade estoque</td>
                             </tr>
                             <tr>
+                                <td> Livraria </td>
+                                <td> id_livraria </td>
+                                <td> CNPJ livraria, Razão social, nome livraria</td>
+                            </tr>
+                            <tr>
                                 <td> Funcionário </td>
                                 <td> id_funcionario</td>
                                 <td> nome, cargo</td>
@@ -122,7 +144,12 @@
                             <tr>
                                 <td> Autor </td>
                                 <td> id_autor</td>
-                                <td> nome autor, sobrenome, nacionalidade. </td>
+                                <td> nome do autor, nacionalidade </td>
+                            </tr>
+                            <tr>
+                                <td> Autor_Livro</td>
+                                <td> Id_AutorLivro</td>
+                                <td> id_autor,id_livro</td>
                             </tr>
                             <tr>
                                 <td> Nota fiscal</td>
@@ -142,18 +169,18 @@
                             <tr>
                                 <td> Compra </td>
                                 <td> id_compra </td>
-                                <td> id_cliente </td>
+                                <td> id_cliente, data da compra, status </td>
                             </tr>
                             <tr>
                                 <td> Gerente </td>
                                 <td> id_gerente </td>
-                                <td> nome </td>
+                                <td> nome, status do pedido problematico </td>
                             </tr>
                             <tr>
-                                <td> Pedido_Problematico </td>
-                                <td> id_problema </td>
-                                <td> Razão do problema, qtd de itens, </td>
-                            </tr>
+                                <td> Pedido Problemático </td>
+                                <td> Id_problema </td>
+                                <td> razão do problema, quantidade de pedido com problema, Id_cliente</td>
+                               </tr>
                             <tr>
                                 <td> Setor de expedição </td>
                                 <td> id_expedicao</td>
@@ -163,6 +190,16 @@
                                 <td> envio </td>
                                 <td> id_envio </td>
                                 <td> data de envio, status, código de rastreamento</td>
+                            </tr>
+                            <tr>
+                                <td> Telefone</td>
+                                <td> id_telefone</td>
+                                <td> telefone, id_cliente</td>
+                            </tr>
+                             <tr>
+                                <td> E-mail</td>
+                                <td> id_email</td>
+                                <td> e-mail, id_cliente</td>
                             </tr>
                         </tbody>
                         
